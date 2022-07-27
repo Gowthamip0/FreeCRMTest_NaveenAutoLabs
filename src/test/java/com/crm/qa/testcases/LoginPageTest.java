@@ -44,8 +44,13 @@ public class LoginPageTest extends TestBase{
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
+	// for push purpose  //
 	
-	
+	@Test(priority=4)
+	public void loginTest1(){
+		System.out.println("For push purpose");
+	}
+		
 	@AfterTest
 	public void tearDown(){
 		driver.quit();

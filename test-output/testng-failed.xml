@@ -8,8 +8,19 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+          <include name="SignInButtonTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      <class name="com.crm.qa.testcases.PreLoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="preLoginPageTitleTest"/>
+          <include name="validateMainHeadingTest"/>
+          <include name="setUp"/>
+          <include name="validateSubHeadingTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.PreLoginPageTest -->
     </classes>
   </test> <!-- Free CRM App Test Cases(failed) -->
 </suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->

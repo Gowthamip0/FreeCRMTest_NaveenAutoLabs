@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
+      <class name="com.crm.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="selectMultipleContactsTest"/>
+          <include name="verifyContactsPageLabel"/>
+          <include name="tearDown"/>
+          <include name="validateCreateNewContact"/>
+          <include name="selectSingleContactsTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyUserNameTest"/>
+          <include name="verifyContactsLinkTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyHomePageTitleTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      <class name="com.crm.qa.testcases.PreLoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="preLoginPageTitleTest"/>
+          <include name="validateMainHeadingTest"/>
+          <include name="setUp"/>
+          <include name="validateSubHeadingTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.PreLoginPageTest -->
       <class name="com.crm.qa.testcases.FreeCrmTest">
         <methods>
           <include name="setUp"/>
           <include name="freeCrmTitleTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.FreeCrmTest -->
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+          <include name="SignInButtonTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
